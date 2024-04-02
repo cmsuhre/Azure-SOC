@@ -18,14 +18,18 @@ In this project, I built a compact honeynet within Azure, forwarding log data fr
 
 The honeynet in Azure consisted of the following components:
 
-- Virtual Machines (2 Windows, 1 Linux) </br>
+- Virtual Machines (2 Windows, 1 Linux) <br>
   - 1 Windows VM was created to serve as an attack machine in order to simulate adversarial activity against each VM and test honeynet configurations <br>
-- Log Analytics Workspace </br>
-  - Logs from each component were forwarded into the LAW for analyzing utilizing Kusto Query Language (KQL)  
-- Blobs Storage, Key Vault, and Activity Log </br>
-- Microsoft Entra ID (formerly Microsoft Active Directory) </br>
-- Microsoft Sentinel </br>
+- Log Analytics Workspace <br>
+  - Logs from each component were forwarded into the LAW for malicious activity data collection and analysis via the use of Kusto Query Language (KQL) <br>
+- Blobs Storage, Key Vault, and Activity Log <br>
+  - These components were created to act as vulnerabilities to be targeted by a simulated internal threat <br>
+- Microsoft Entra ID (formerly Microsoft Active Directory) <br>
+  - Another internal component within Azure that was created to act as vulnerability to be targeted by a simulated internal threat <br>
+- Microsoft Sentinel (SIEM) </br>
+  - The SIEM tool within Azure configured with custom alerts based on the malicious activity data collected and analyzed within the Log Analytics Workspace using KQL<br>
 - Attack Maps, Incidents, & Alerts </br>
+  - Imported a geolocation IP address watchlist to append to IP address data collected in logs ingested by the Log Analytics Workspace in order to pinpoint geographic location of attacks <br>
 
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet.
 
