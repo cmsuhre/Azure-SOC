@@ -29,7 +29,7 @@ The honeynet in Azure consisted of the following components:
 - Microsoft Sentinel (SIEM) </br>
   - The SIEM tool within Azure configured with custom alerts based on the malicious activity data collected and analyzed within the Log Analytics Workspace using KQL<br>
 - Attack Maps, Incidents, & Alerts </br>
-  - Imported a geolocation IP address watchlist to append to IP address data collected in logs ingested by the Log Analytics Workspace in order to pinpoint geographic location of attacks <br>
+  - Imported geolocation IP address data via a custom watchlist to correlate IP address data ingested by the Log Analytics Workspace in order to pinpoint the geographic location of incoming attacks <br>
 
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet.
 
