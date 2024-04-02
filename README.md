@@ -37,8 +37,8 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 ## Metrics Before Hardening / Security Controls
 
-The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2024-03-28 18:02:50
+The following table shows the metrics we measured in our insecure environment for 24 hours:<br>
+Start Time 2024-03-28 18:02:50 <br>
 Stop Time 2024-03-29 18:02:50
 
 | Metric                   | Count
@@ -55,8 +55,8 @@ Stop Time 2024-03-29 18:02:50
 
 ## Metrics After Hardening / Security Controls
 
-The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2024-03-30 15:44:43
+The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:<br>
+Start Time 2024-03-30 15:44:43<br>
 Stop Time	2024-03-31 15:44:43
 
 | Metric                   | Count
