@@ -19,7 +19,9 @@ In this project, I built a compact honeynet within Azure, forwarding log data fr
 The honeynet in Azure consisted of the following components:
 
 - Virtual Machines (2 Windows, 1 Linux) </br>
+  - 1 Windows VM was created to serve as an attack machine in order to simulate adversarial activity against each VM and test honeynet configurations <br>
 - Log Analytics Workspace </br>
+  - Logs from each component were forwarded into the LAW for analyzing utilizing Kusto Query Language (KQL)  
 - Blobs Storage, Key Vault, and Activity Log </br>
 - Microsoft Entra ID (formerly Microsoft Active Directory) </br>
 - Microsoft Sentinel </br>
