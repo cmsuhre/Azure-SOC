@@ -19,17 +19,17 @@ In this project, I built a compact honeynet within Azure, forwarding log data fr
 The honeynet in Azure consisted of the following components:
 
 - Virtual Machines (2 Windows, 1 Linux) <br>
-  - 1 Windows VM was created to serve as an attack machine in order to simulate adversarial activity against each VM and test honeynet configurations <br>
+  - A Windows VM was set up to mimic attacks, testing defenses and honeynet setups across other VMs <br>
 - Log Analytics Workspace <br>
-  - Logs from each component were forwarded into the LAW for malicious activity data collection and analysis via the use of Kusto Query Language (KQL) <br>
+  - Logs from every component were routed to the Log Analytics Workspace, enabling the collection and analysis of malicious activity data through Kusto Query Language (KQL) <br>
 - Blobs Storage, Key Vault, and Activity Log <br>
-  - These components were created to act as vulnerabilities to be targeted by a simulated internal threat <br>
+  - These components were designed for targeting by a simulated internal threat <br>
 - Microsoft Entra ID (formerly Microsoft Active Directory) <br>
-  - Another internal component within Azure that was created to act as vulnerability to be targeted by a simulated internal threat <br>
+  - Anothercomponent within Azure that was created for targeting by a simulated internal threat <br>
 - Microsoft Sentinel (SIEM) </br>
-  - The SIEM tool within Azure configured with custom alerts based on the malicious activity data collected and analyzed within the Log Analytics Workspace using KQL<br>
+  - The Azure SIEM tool configured with custom alerts based on the malicious activity data collected and analyzed within the Log Analytics Workspace using KQL<br>
 - Attack Maps, Incidents, & Alerts </br>
-  - Imported geolocation IP address data via a custom watchlist to correlate IP address data ingested by the Log Analytics Workspace in order to pinpoint the geographic location of incoming attacks <br>
+  - Imported geolocation IP data into a custom watchlist to pinpoint attack origins using Log Analytics Workspace correlation <br>
 
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet.
 
