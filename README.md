@@ -6,7 +6,7 @@
 
 ## Introduction
 
-In this project, I build a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, apply some security controls to harden the environment, measure metrics for another 24 hours, then show the results below. The metrics we will show are:
+In this project, I constructed a compact honeynet within Azure, channeling log data from diverse sources into a Log Analytics workspace. This infrastructure is utilized by Microsoft Sentinel to generate attack maps, initiate alerts, and formulate incidents. I conducted a security assessment by monitoring metrics in the initially unsecured environment for 24 hours, implemented security enhancements to fortify the setup, and conducted another 24-hour metric evaluation. The outcomes are presented below. The metrics we will discuss include:
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
@@ -14,21 +14,20 @@ In this project, I build a mini honeynet in Azure and ingest log sources from va
 - SecurityIncident (Incidents created by Sentinel)
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
-## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
-
-## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+## Honeynet Architecture
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
-- Virtual Network (VNet)
-- Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
-- Log Analytics Workspace
-- Azure Key Vault
-- Azure Storage Account
-- Microsoft Sentinel
+- Virtual Machines (2 Windows, 1 Linux) </br>
+![image](https://github.com/cmsuhre/Azure-SOC/assets/25305998/4ca49a26-a046-4e68-8555-9d24e0916e4a)
+- Log Analytics Workspace </br>
+![image](https://github.com/cmsuhre/Azure-SOC/assets/25305998/ed1ad557-21ea-4787-8ab7-c0a578d59748)
+- Blobs Storage, Key Vault, and Activity Log </br>
+![image](https://github.com/cmsuhre/Azure-SOC/assets/25305998/6b786fff-776b-4bbf-b371-190b93ca81fb)
+- Microsoft Entra ID (formerly Microsoft Active Directory) </br>
+![image](https://github.com/cmsuhre/Azure-SOC/assets/25305998/e4d55a2d-1f7b-41dd-8a54-342e5bde0940)
+- Microsoft Sentinel </br>
+![image](https://github.com/cmsuhre/Azure-SOC/assets/25305998/3d9e6bc9-f78d-45c6-a13e-c1edad41d81f)
 
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
 
