@@ -26,7 +26,7 @@ The honeynet in Azure consisted of the following components:
 - Blobs Storage, Key Vault, and Activity Log <br>
   - These components were designed for targeting by a simulated internal threat <br>
 - Microsoft Entra ID (formerly Microsoft Active Directory) <br>
-  - Anothercomponent within Azure that was created for targeting by a simulated internal threat <br>
+  - Another component within Azure that was created for targeting by a simulated internal threat <br>
 - Microsoft Sentinel (SIEM) </br>
   - The Azure SIEM tool configured with custom alerts based on the malicious activity data collected and analyzed within the Log Analytics Workspace using KQL<br>
 - Attack Maps, Incidents, & Alerts </br>
