@@ -34,7 +34,7 @@ The honeynet in Azure consisted of the following components:
 
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet.
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint.
+For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls.
 
 ## Attack Maps Before Hardening / Security Controls
 ![(before) NSG Allowed Malicious Inbound Flows](https://github.com/cmsuhre/Azure-SOC/assets/25305998/077b0ce6-7b08-4cd7-8541-2adb639b9e1e)<br>
