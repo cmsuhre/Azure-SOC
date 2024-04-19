@@ -31,8 +31,9 @@ In my Azure honeynet project, I used a mix of components to simulate and monitor
 🚨 Microsoft Sentinel (SIEM): Configured to create custom alerts based on the malicious activity data collected, helping us respond quickly to simulated attacks.<br>
 
 🌍 Attack Maps, Incidents, & Alerts: I imported geolocation IP data into a custom watchlist to track the origins of attacks, enhancing our monitoring capabilities through the correlation features in Log Analytics Workspace.
+
 --------------------------------------------------------------
-📝<b>NOTE:<b> <br>
+📝<b>NOTE:</b> <br>
 🔓 For the "BEFORE" metrics, all resources were initially set up with exposure to the internet. The Virtual Machines had their Network Security Groups and built-in firewalls completely open, and all other resources were deployed with public endpoints accessible from the Internet.
 
 🔒 For the "AFTER" metrics, the Network Security Groups were tightened by blocking all traffic except for connections from my admin workstation, and all other resources were secured using their built-in firewalls.
