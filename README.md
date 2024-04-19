@@ -18,19 +18,19 @@ In this project, I built a compact honeynet within Azure, forwarding log data fr
 ## Honeynet Components
 
 The honeynet in Azure consisted of the following components:
+In my Azure honeynet project, I used a mix of components to simulate and monitor cyber threats:
 
-- Virtual Machines (2 Windows, 1 Linux) <br>
-  - A Windows VM was set up to mimic attacks, testing defenses and honeynet setups across other VMs <br>
-- Log Analytics Workspace <br>
-  - Logs from every component were routed to the Log Analytics Workspace, enabling the collection and analysis of malicious activity data through Kusto Query Language (KQL) <br>
-- Blobs Storage, Key Vault, and Activity Log <br>
-  - These components were designed for targeting by a simulated internal threat <br>
-- Microsoft Entra ID (formerly Microsoft Active Directory) <br>
-  - Another component within Azure that was created for targeting by a simulated internal threat <br>
-- Microsoft Sentinel (SIEM) </br>
-  - The Azure SIEM tool configured with custom alerts based on the malicious activity data collected and analyzed within the Log Analytics Workspace using KQL<br>
-- Attack Maps, Incidents, & Alerts </br>
-  - Imported geolocation IP data into a custom watchlist to pinpoint attack origins using Log Analytics Workspace correlation <br>
+🌐 Virtual Machines: I set up two Windows VMs and one Linux VM. One of the Windows VMs was designed to simulate attacks, testing our defenses and the honeynet setup across other VMs.<br>
+
+📊 Log Analytics Workspace: All logs from the components were funneled here, allowing for the collection and analysis of data on malicious activities using Kusto Query Language (KQL).<br>
+
+🔒 Blob Storage, Key Vault, and Activity Log: These components were targeted by a simulated internal threat to test their security measures.<br>
+
+🆔 Microsoft Entra ID (formerly Microsoft Active Directory): This was another key component targeted by simulated threats within Azure.<br>
+
+🚨 Microsoft Sentinel (SIEM): Configured to create custom alerts based on the malicious activity data collected, helping us respond quickly to simulated attacks.<br>
+
+🌍 Attack Maps, Incidents, & Alerts: I imported geolocation IP data into a custom watchlist to track the origins of attacks, enhancing our monitoring capabilities through the correlation features in Log Analytics Workspace.
 
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet.
 
