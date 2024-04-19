@@ -32,9 +32,9 @@ In my Azure honeynet project, I used a mix of components to simulate and monitor
 
 🌍 Attack Maps, Incidents, & Alerts: I imported geolocation IP data into a custom watchlist to track the origins of attacks, enhancing our monitoring capabilities through the correlation features in Log Analytics Workspace.
 
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet.
+🔓 For the "BEFORE" metrics, all resources were initially set up with exposure to the internet. The Virtual Machines had their Network Security Groups and built-in firewalls completely open, and all other resources were deployed with public endpoints accessible from the Internet.
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls.
+🔒 For the "AFTER" metrics, the Network Security Groups were tightened by blocking all traffic except for connections from my admin workstation, and all other resources were secured using their built-in firewalls.
 
 ## Attack Maps Before Hardening / Security Controls
 ![(before) NSG Allowed Malicious Inbound Flows](https://github.com/cmsuhre/Azure-SOC/assets/25305998/077b0ce6-7b08-4cd7-8541-2adb639b9e1e)<br>
@@ -76,4 +76,4 @@ Stop Time	2024-03-31 15:44:43
 
 ## Conclusion
 
-Upon review, the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness. In addition, it is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
+After applying the security controls, there was a significant drop in the number of security events and incidents, clearly showing how effective these measures were. It's also important to point out that if the network resources had been in heavy use by regular users, we might have seen even more security events and alerts during the 24 hours after implementing the controls.
