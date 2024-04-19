@@ -19,7 +19,7 @@ In this project, I built a compact honeynet within Azure, forwarding log data fr
 The honeynet in Azure consisted of the following components:
 In my Azure honeynet project, I used a mix of components to simulate and monitor cyber threats:
 
-🌐 Virtual Machines: I set up two Windows VMs and one Linux VM. One of the Windows VMs was designed to simulate attacks, testing our defenses and the honeynet setup across other VMs.<br>
+💻 Virtual Machines: I set up two Windows VMs and one Linux VM. One of the Windows VMs was designed to simulate attacks, testing our defenses and the honeynet setup across other VMs.<br>
 
 📊 Log Analytics Workspace: All logs from the components were funneled here, allowing for the collection and analysis of data on malicious activities using Kusto Query Language (KQL).<br>
 
