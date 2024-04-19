@@ -1,4 +1,4 @@
-# Azure-SOC
+# Azure Security Operations Center (SOC)
 
 # 🔒Azure Cloud SOC Project: Honeynet and SIEM using Live Traffic 🔒
 ![Cloud SOC](https://github.com/cmsuhre/Azure-SOC/assets/25305998/3531ba98-4260-4367-ba5a-13047b40a479)
