@@ -30,7 +30,7 @@ The honeynet in Azure consisted of the following features to track, simulate, an
 
 🌍 Attack Maps, Incidents, & Alerts: I imported geolocation IP data into a custom watchlist to track the origins of attacks, enhancing our monitoring capabilities through the correlation features in Log Analytics Workspace.
 <br>
----------------------------------------------------------------
+--------------------------------------------------------------- <br>
 <br>📝 <b>Before and After</b><br>
 <br> 
 🔓 For the "BEFORE" metrics, all resources were initially set up with exposure to the internet. The Virtual Machines had their Network Security Groups and built-in firewalls completely open, and all other resources were deployed with public endpoints accessible from the Internet.
