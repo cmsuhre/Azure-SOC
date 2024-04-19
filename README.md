@@ -29,7 +29,6 @@ The honeynet in Azure consisted of the following features to track, simulate, an
 🚨 Microsoft Sentinel (SIEM): Configured to create custom alerts based on the malicious activity data collected from the Log Analytics Workspace, aiding with threat detection and incident response.<br>
 
 🌍 Attack Maps, Incidents, & Alerts: I imported geolocation IP data into a custom watchlist to track the origins of attacks, enhancing our monitoring capabilities through the correlation features in Log Analytics Workspace.
-
 <br>
 📝 <b>NOTE</b>
 <br> 
