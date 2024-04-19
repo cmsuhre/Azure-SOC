@@ -14,10 +14,9 @@ In this project, I built a compact honeynet within Azure, forwarding log data fr
 🛡️ SecurityIncident (Incidents created by Sentinel)<br>
 🌐 AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)<br>
 
-## Honeynet Components
+## Configured Honeynet Features
 
-The honeynet in Azure consisted of the following components:
-In my Azure honeynet project, I used a mix of components to simulate and monitor cyber threats:
+The honeynet in Azure consisted of the following features to track, simulate, and monitor real world cyber threats:
 
 💻 Virtual Machines: I set up two Windows VMs and one Linux VM. One of the Windows VMs was designed to simulate attacks, testing our defenses and the honeynet setup across other VMs.<br>
 
