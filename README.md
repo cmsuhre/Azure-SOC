@@ -26,7 +26,7 @@ The honeynet in Azure consisted of the following features to track, simulate, an
 
 🆔 Microsoft Entra ID (formerly Microsoft Active Directory): This was another key component targeted by simulated threats within Azure.<br>
 
-🚨 Microsoft Sentinel (SIEM): Configured to create custom alerts based on the malicious activity data collected, helping us respond quickly to simulated attacks.<br>
+🚨 Microsoft Sentinel (SIEM): Configured to create custom alerts based on the malicious activity data collected from the Log Analytics Workspace, aiding with threat detection and incident resposne.<br>
 
 🌍 Attack Maps, Incidents, & Alerts: I imported geolocation IP data into a custom watchlist to track the origins of attacks, enhancing our monitoring capabilities through the correlation features in Log Analytics Workspace.
 
