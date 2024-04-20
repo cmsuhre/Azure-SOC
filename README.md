@@ -33,7 +33,6 @@ The honeynet in Azure had features to track and simulate real world cyber threat
 - 🚨 <b>Microsoft Sentinel (SIEM):</b> Turns malicious activity data into custom alerts. This helps with threat detection and incident response.
 
 - 🌍 <b>Attack Maps, Incidents, & Alerts:</b> I added geolocation IP data to a custom watchlist. This tracked attack origins and improved monitoring in the Log Analytics Workspace.
-<br> 
 <br><strong><u> 🔄 BEFORE & AFTER🔄 </u></strong><br>
 <br> 
 🔓 For the "BEFORE" metrics, all resources were initially set up with exposure to the internet. The Virtual Machines had their Network Security Groups and built-in firewalls completely open, and all other resources were deployed with public endpoints accessible from the Internet.
