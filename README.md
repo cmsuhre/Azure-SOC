@@ -20,7 +20,7 @@ I started by monitoring metrics in an unsecured environment for 24 hours. I then
 
 ## Configured Honeynet Features
 
-The honeynet in Azure had features to track and simulate real world cyber threats: 
+The honeynet in Azure had features to track real world and simulated cyber threats: 
 
 - 💻 <b>Virtual Machines:</b> I set up two Windows VMs and one Linux VM. I designed one of the Windows VMs to simulate attacks. It tested our defenses and the honeynet setup across other VMs
 
