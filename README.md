@@ -11,7 +11,6 @@ In this project, I created a small honeynet in Azure. I sent log data from diffe
 I started by monitoring metrics in an unsecured environment for 24 hours. I then implemented security enhancements to strengthen the setup. Finally, I conducted another 24-hour metric evaluation. The report presents the outcomes below.
 
 📄 <strong><u>Collected Logs included: </u></strong>
-
 - SecurityEvent: Windows Event Logs<br>
 - Syslog: Linux Event Logs<br>
 - SecurityAlert: Log Analytics Alerts Triggered<br>
