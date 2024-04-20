@@ -62,7 +62,7 @@ The table below lists the metrics from our insecure environment over 24 hours:<b
 
 ## Attack Maps Before Hardening / Security Controls
 
-```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+```After hardening, no map queries showed malicious activity for 24 hours.```
 
 ## Metrics After Hardening / Security Controls
 
