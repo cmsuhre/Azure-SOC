@@ -66,9 +66,9 @@ The table below lists the metrics from our insecure environment over 24 hours:<b
 
 ## Metrics After Hardening / Security Controls
 
-The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:<br>
-Start Time 2024-03-30 15:44:43<br>
-Stop Time	2024-03-31 15:44:43
+Below is a table of our metrics 24 hours after adding security controls:
+- Start Time: 2024-03-30 15:44:43
+- Stop Time: 2024-03-31 15:44:43
 
 | Metric                   | Count
 | ------------------------ | -----
