@@ -49,11 +49,8 @@ The honeynet in Azure had features to track and simulate real world cyber threat
 ## Metrics Before Hardening / Security Controls
 
 The table below lists the metrics from our insecure environment over 24 hours:<br>
-Start Time: 2024-03-28 18:02:50
-
-Stop Time: 2024-03-29 18:02:50
-Start Time 2024-03-28 18:02:50 <br>
-Stop Time 2024-03-29 18:02:50
+- Start Time: 2024-03-28 18:02:50
+- Stop Time: 2024-03-29 18:02:50
 
 | Metric                   | Count
 | ------------------------ | -----
