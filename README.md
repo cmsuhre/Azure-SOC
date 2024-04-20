@@ -33,7 +33,6 @@ The honeynet in Azure had features to track and simulate real world cyber threat
 🚨 <b>Microsoft Sentinel (SIEM):</b> Turns malicious activity data into custom alerts. This helps with threat detection and incident response.
 
 🌍 <b>Attack Maps, Incidents, & Alerts:</b> I added geolocation IP data to a custom watchlist. This tracked attack origins and improved monitoring in the Log Analytics Workspace.
---------------------------------
 <br> 
 <br><strong><u> 🔄 BEFORE & AFTER🔄 </u></strong><br>
 <br> 
