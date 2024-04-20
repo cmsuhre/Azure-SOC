@@ -6,7 +6,9 @@
 
 ## Introduction
 
-In this project, I built a compact honeynet within Azure, forwarding log data from various sources into a Log Analytics Workspace. This infrastructure is utilized by Microsoft Sentinel to generate attack maps, initiate alerts, and formulate incidents. I conducted a security assessment by monitoring metrics in the initially unsecured environment for 24 hours, implemented security enhancements to fortify the setup, and conducted another 24-hour metric evaluation. The outcomes are presented below. 
+In this project, I created a small honeynet in Azure. I sent log data from different sources to a Log Analytics Workspace. Microsoft Sentinel uses this infrastructure for attack maps, alerts, and incidents. 
+
+I started by monitoring metrics in an unsecured environment for 24 hours. I then implemented security enhancements to strengthen the setup. Finally, I conducted another 24-hour metric evaluation. The report presents the outcomes below.
 
 📄 <strong><u>Collected Logs included: </u></strong>
 
