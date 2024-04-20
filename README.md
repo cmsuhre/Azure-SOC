@@ -12,11 +12,11 @@ I started by monitoring metrics in an unsecured environment for 24 hours. I then
 
 📄 <strong><u>Collected Logs included: </u></strong>
 
--SecurityEvent: Windows Event Logs<br>
--Syslog: Linux Event Logs<br>
--SecurityAlert: Log Analytics Alerts Triggered<br>
--SecurityIncident: Incidents created by Sentinel<br>
--AzureNetworkAnalytics_CL: Malicious Flows allowed into our honeynet<br>
+- SecurityEvent: Windows Event Logs<br>
+- Syslog: Linux Event Logs<br>
+- SecurityAlert: Log Analytics Alerts Triggered<br>
+- SecurityIncident: Incidents created by Sentinel<br>
+- AzureNetworkAnalytics_CL: Malicious Flows allowed into our honeynet<br>
 
 ## Configured Honeynet Features
 
