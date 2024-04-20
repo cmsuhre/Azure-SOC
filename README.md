@@ -80,4 +80,4 @@ Below is a table of our metrics 24 hours after adding security controls:
 
 ## Conclusion
 
-After applying the security controls, there was a significant drop in the number of security events and incidents, clearly showing how effective these measures were. It's also important to point out that if the network resources had been in heavy use by regular users, we might have seen even more security events and alerts during the 24 hours after implementing the controls.
+After adding security controls, security events and incidents dropped, showing their effectiveness. More people on the network could mean more events and alerts after adding controls.
