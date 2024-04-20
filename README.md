@@ -20,19 +20,19 @@ I started by monitoring metrics in an unsecured environment for 24 hours. I then
 
 ## Configured Honeynet Features
 
-The honeynet in Azure consisted of the following features to track, simulate, and monitor real world cyber threats:
+The honeynet in Azure had features to track and simulate real world cyber threats: 
 
-💻 Virtual Machines: I set up two Windows VMs and one Linux VM. One of the Windows VMs was designed to simulate attacks, testing our defenses and the honeynet setup across other VMs.<br>
+💻 Virtual Machines: I set up two Windows VMs and one Linux VM. I designed one of the Windows VMs to simulate attacks. It tested our defenses and the honeynet setup across other VMs
 
-📊 Log Analytics Workspace: All logs from the components were funneled here, allowing for the collection and analysis of data on malicious activities using Kusto Query Language (KQL).<br>
+📊 Log Analytics Workspace: I funneled all logs from the components here. This simplified collecting and analyzing data on malicious activities with KQL.
 
-🔒 Blob Storage, Key Vault, and Activity Log: These components were targeted by a simulated internal threat to test their security measures.<br>
+🔒 Blob Storage, Key Vault, and Activity Log: A simulated threat tested their security.
 
-🆔 Microsoft Entra ID (formerly Microsoft Active Directory): This was another key component targeted by simulated threats within Azure.<br>
+🆔 Microsoft Entra ID, once Microsoft Active Directory: faced simulated threats in Azure.
 
-🚨 Microsoft Sentinel (SIEM): Configured to create custom alerts based on the malicious activity data collected from the Log Analytics Workspace, aiding with threat detection and incident response.<br>
+🚨 Microsoft Sentinel (SIEM): Turns malicious activity data into custom alerts. This helps with threat detection and incident response.
 
-🌍 Attack Maps, Incidents, & Alerts: I imported geolocation IP data into a custom watchlist to track the origins of attacks, enhancing our monitoring capabilities through the correlation features in Log Analytics Workspace.
+🌍 Attack Maps, Incidents, & Alerts: I added geolocation IP data to a custom watchlist. This tracked attack origins and improved monitoring in the Log Analytics Workspace.
 <br> 
 <br><strong><u> 🔄 BEFORE & AFTER🔄 </u></strong><br>
 <br> 
