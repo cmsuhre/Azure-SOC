@@ -36,9 +36,9 @@ The honeynet in Azure had features to track and simulate real world cyber threat
 
 <br><strong><u> 🔄 BEFORE & AFTER🔄 </u></strong><br>
 <br> 
-🔓 For the "BEFORE" metrics, all resources were initially set up with exposure to the internet. The Virtual Machines had their Network Security Groups and built-in firewalls completely open, and all other resources were deployed with public endpoints accessible from the Internet.
+🔓 For the "BEFORE" metrics, we exposed all resources to the internet. The Virtual Machines kept their Network Security Groups and built-in firewalls completely open. I deployed all other resources with public endpoints accessible from the Internet.
 
-🔒 For the "AFTER" metrics, the Network Security Groups were tightened by blocking all traffic except for connections from my admin workstation, and all other resources were secured using their built-in firewalls.
+🔒 For the "AFTER" metrics, we blocked all traffic except from my admin workstation. I also secured all other resources with their built-in firewalls.
 
 ## Attack Maps Before Hardening / Security Controls
 ![(before) NSG Allowed Malicious Inbound Flows](https://github.com/cmsuhre/Azure-SOC/assets/25305998/077b0ce6-7b08-4cd7-8541-2adb639b9e1e)<br>
@@ -48,7 +48,10 @@ The honeynet in Azure had features to track and simulate real world cyber threat
 
 ## Metrics Before Hardening / Security Controls
 
-The following table shows the metrics we measured in our insecure environment for 24 hours:<br>
+The table below lists the metrics from our insecure environment over 24 hours:<br>
+Start Time: 2024-03-28 18:02:50
+
+Stop Time: 2024-03-29 18:02:50
 Start Time 2024-03-28 18:02:50 <br>
 Stop Time 2024-03-29 18:02:50
 
