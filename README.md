@@ -35,7 +35,7 @@ The honeynet in Azure had features to track and simulate real world cyber threat
 - 🌍 <b>Attack Maps, Incidents, & Alerts:</b> I added geolocation IP data to a custom watchlist. This tracked attack origins and improved monitoring in the Log Analytics Workspace.
 
 <br><strong><u> 🔄 BEFORE & AFTER🔄 </u></strong><br>
-<br> 
+
 - 🔓 For the "BEFORE" metrics, we exposed all resources to the internet. The Virtual Machines kept their Network Security Groups and built-in firewalls completely open. I deployed all other resources with public endpoints accessible from the Internet.
 
 - 🔒 For the "AFTER" metrics, we blocked all traffic except from my admin workstation. I also secured all other resources with their built-in firewalls.
