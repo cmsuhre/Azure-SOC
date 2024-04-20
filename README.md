@@ -23,10 +23,15 @@ I started by monitoring metrics in an unsecured environment for 24 hours. I then
 The honeynet in Azure had features to track and simulate real world cyber threats: 
 
 💻 <b>Virtual Machines:</b> I set up two Windows VMs and one Linux VM. I designed one of the Windows VMs to simulate attacks. It tested our defenses and the honeynet setup across other VMs
+
 📊 <b>Log Analytics Workspace:</b> I funneled all logs from the components here. This simplified collecting and analyzing data on malicious activities with KQL.
+
 🔒 <b>Blob Storage, Key Vault, and Activity Log:</b> A simulated threat tested their security.
+
 🆔 <b>Microsoft Entra ID, once Microsoft Active Directory:</b> faced simulated threats in Azure.
+
 🚨 <b>Microsoft Sentinel (SIEM):</b> Turns malicious activity data into custom alerts. This helps with threat detection and incident response.
+
 🌍 <b>Attack Maps, Incidents, & Alerts:</b> I added geolocation IP data to a custom watchlist. This tracked attack origins and improved monitoring in the Log Analytics Workspace.
 <br> 
 <br><strong><u> 🔄 BEFORE & AFTER🔄 </u></strong><br>
